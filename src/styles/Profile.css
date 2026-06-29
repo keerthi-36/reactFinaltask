@@ -1,0 +1,118 @@
+
+.profile{
+    min-height:100vh;
+    padding:70px 8%;
+    background:linear-gradient(135deg,#eef7ff,#ffffff,#f8fbff);
+}
+
+.profile h1{
+    text-align:center;
+    font-size:46px;
+    color:#0f172a;
+    margin-bottom:15px;
+    font-weight:800;
+}
+
+.profile-subtitle{
+    text-align:center;
+    color:#64748b;
+    margin-bottom:45px;
+    font-size:18px;
+}
+
+/* BOOKING GRID */
+
+.profile-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+/* CARD */
+
+.profile-card{
+    background:#fff;
+    border-radius:22px;
+    padding:25px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.3s;
+    border-top:5px solid #2563eb;
+}
+
+.profile-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.profile-card h3{
+    color:#0f172a;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.profile-card p{
+    color:#475569;
+    line-height:1.8;
+    margin-bottom:10px;
+}
+
+/* DELETE BUTTON */
+
+.profile-card button{
+    width:100%;
+    margin-top:20px;
+    padding:13px;
+    border:none;
+    border-radius:12px;
+    background:#ef4444;
+    color:#fff;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.profile-card button:hover{
+    background:#dc2626;
+    transform:translateY(-2px);
+}
+
+/* EMPTY STATE */
+
+.empty-profile{
+    max-width:500px;
+    margin:60px auto;
+    text-align:center;
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.empty-profile h2{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.empty-profile p{
+    color:#64748b;
+    line-height:1.8;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.profile{
+    padding:50px 20px;
+}
+
+.profile h1{
+    font-size:34px;
+}
+
+.profile-grid{
+    grid-template-columns:1fr;
+}
+
+}
